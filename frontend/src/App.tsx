@@ -1,11 +1,14 @@
-import { LessonPlanForm } from "./components/forms/LessonPlanForm";
+import { Navbar } from "./components/navBar"
+import Home from "./screens/Home"
 
 export default function App() {
-
   return (
-    <div className="min-h-screen flex items-center justify-center bg-background p-6 gap-2">
-      <LessonPlanForm />
+    <div className="min-h-screen w-full bg-background">
+      <Navbar />
+
+      <main className="min-h-screen w-full overflow-x-hidden">
+          <Home />
+      </main>
     </div>
   )
-
 }

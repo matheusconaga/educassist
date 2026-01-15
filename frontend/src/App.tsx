@@ -1,13 +1,14 @@
-import { Navbar } from "./components/navBar"
-import Home from "./screens/Home"
+// import { Navbar } from "./components/navBar"
+// import Home from "./screens/Home"
+import Inicio from "./screens/Inicio"
 
 export default function App() {
   return (
     <div className="min-h-screen w-full bg-background">
-      <Navbar />
+      {/* <Navbar /> */}
 
       <main className="min-h-screen w-full overflow-x-hidden">
-          <Home />
+          <Inicio />
       </main>
     </div>
   )

@@ -7,7 +7,7 @@ export default function Home() {
         relative min-h-screen w-screen overflow-hidden
         left-1/2 right-1/2
         -ml-[50vw] -mr-[50vw]
-      "
+    "
         >
             <div
                 className="absolute inset-0 bg-cover "

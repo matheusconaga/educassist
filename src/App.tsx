@@ -1,11 +1,10 @@
+import { MainLayout } from "./app/layout/MainLayout";
+import LandingPage from "./pages/LandingPage";
 
 export default function App() {
-
   return (
-    <div className="App">
-      <h1>Welcome to EducAssist!</h1>
-      <p>Your personal educational assistant.</p>
-    </div>
-  )
-
+    <MainLayout>
+      <LandingPage />
+    </MainLayout>
+  );
 }

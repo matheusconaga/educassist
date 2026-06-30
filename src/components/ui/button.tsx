@@ -55,7 +55,7 @@ const buttonVariants = cva(
 
         ghost: [
           "text-foreground",
-
+          "cursor-default",
           "hover:bg-muted",
         ],
 

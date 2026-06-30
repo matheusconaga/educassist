@@ -5,7 +5,7 @@ export default function Why() {
   return (
     <section className="relative overflow-hidden bg-background">
       <div>
-        <h1 className=" mt-20 text-5xl font-extrabold leading-tight tracking-tight text-primary text-center">
+        <h1 className="mt-20 text-5xl font-extrabold leading-tight tracking-tight text-primary text-center">
           Por que o EducAssist?
         </h1>
         <p className="text-base text-muted-foreground  text-center font-[500]">
@@ -28,7 +28,7 @@ export default function Why() {
             title="Informações de Desempenho"
             subtitle="Veja os dados referentes a cada aluno, para identificar áreas para intervenção ou aprendizagem acelerada."
           />
-          ;
+          
         </div>
       </div>
     </section>

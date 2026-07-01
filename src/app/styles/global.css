@@ -6,13 +6,17 @@
 @theme {
 
   --color-background: #F0FEFD;
+  --color-background2: #EFF4FF;
   --color-foreground: #0F172A;
 
   --color-primary: #0D9488;
   --color-primary-foreground: #F0FEFD;
 
-  --color-secondary: #5FFFF1;
+  --color-secondary: #006860;
   --color-secondary-foreground: #0F172A;
+
+  --color-destructive: #EF4444;
+  --color-destructive-foreground: #FFE6E3;
 
   --color-card: #FFFFFF;
   --color-card-foreground: #0F172A;

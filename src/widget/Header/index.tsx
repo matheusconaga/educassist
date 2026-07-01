@@ -21,7 +21,7 @@ export default function Header() {
         {/* Botões */}
         <div className="flex items-center gap-3">
           <Button variant="primary">Entrar</Button>
-          <Button variant="outline">Como funciona?</Button>
+          <Button variant="outline">Registrar</Button>
         </div>
       </div>
     </header>

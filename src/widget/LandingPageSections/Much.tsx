@@ -1,5 +1,5 @@
 import { PriceCard } from "@/components/ui/price_card";
-import { Sparkle, Sparkles } from "lucide-react";
+import { Download, File, GraduationCap, Layers, Mail, PlusCircle, Sparkle, Sparkles } from "lucide-react";
 
 export default function Much() {
   return (
@@ -22,19 +22,23 @@ export default function Much() {
             currentPlan={true}
             benefits={[
               {
-                icon: <Sparkle size={18} />,
-                label: "Geração de 5 planos por mês",
+                icon: <Sparkles size={18} />,
+                label: "5 créditos inteligentes/mês",
               },
               {
-                icon: <Sparkles size={18} />,
-                label: "Exportação em PDF",
+                icon: <File size={18} />,
+                label: "Até 2 documentos",
               },
               {
-                icon: <Sparkles size={18} />,
-                label: "Correção de atividades",
+                icon: <GraduationCap size={18} />,
+                label: "1 turma",
               },
               {
-                icon: <Sparkles size={18} />,
+                icon: <Layers size={18} />,
+                label: "Banco de documentos limitado",
+              },
+              {
+                icon: <Mail size={18} />,
                 label: "Suporte por e-mail",
               },
             
@@ -47,45 +51,63 @@ export default function Much() {
             price="R$ 14,90"
             benefits={[
               {
-                icon: <Sparkle size={18} />,
-                label: "Geração de 5 planos por mês",
+                icon: <PlusCircle size={18} />,
+                label: "Tudo do Basico, mais:",
               },
               {
                 icon: <Sparkles size={18} />,
-                label: "Exportação em PDF",
+                label: "35 créditos inteligentes/mês",
+              },
+               {
+                icon: <File size={18} />,
+                label: "Até 30 documentos",
+              },
+              {
+                icon: <Download size={18} />,
+                label: "Exportação em Word/PDF",
+              },
+               {
+                icon: <GraduationCap size={18} />,
+                label: "Até 5 turmas",
               },
               {
                 icon: <Sparkles size={18} />,
-                label: "Correção de atividades",
+                label: "Geração de atividades",
               },
-              {
-                icon: <Sparkles size={18} />,
-                label: "Suporte por e-mail",
-              },
+              
             ]}
           />
           <PriceCard
             title="Plano"
             highlight="Pro"
             subtitle="Para quem utiliza a plataforma praticamente todos os dias."
-            price="R$ 39,90"
+            price="R$ 29,90"
             benefits={[
               {
+                icon: <PlusCircle size={18} />,
+                label: "Tudo do Essencial, mais:",
+              },
+              {
                 icon: <Sparkle size={18} />,
-                label: "Geração de 5 planos por mês",
+                label: "100 créditos inteligentes/mês",
+              },
+              {
+                icon: <File size={18} />,
+                label: "Até 150 documentos",
+              },
+              {
+                icon: <GraduationCap size={18} />,
+                label: "Turmas ilimitadas",
               },
               {
                 icon: <Sparkles size={18} />,
-                label: "Exportação em PDF",
+                label: "IA mais avançada",
               },
               {
                 icon: <Sparkles size={18} />,
-                label: "Correção de atividades",
-              },
-              {
-                icon: <Sparkles size={18} />,
-                label: "Suporte por e-mail",
-              },
+                label: "Novos recursos em primeira mão",
+              }, 
+              
             ]}
           />
         </div>

@@ -3,18 +3,20 @@ import { VideoPresentation } from "@/components/ui/video_presentation";
 
 export default function How() {
   return (
-    <section className="relative overflow-hidden bg-background">
-      <div className="mx-auto mt-20 max-w-[1200px] px-4">
+    <section className="relative overflow-hidden bg-background2">
+      <div className="mx-auto mt-20 pb-20 max-w-[1200px] px-4">
         <div>
-          <h1 className=" mt-20 text-5xl font-extrabold leading-tight tracking-tight text-primary text-center">
+          <h1 className="text-5xl font-extrabold leading-tight tracking-tight text-primary text-center">
             Como Funciona?
           </h1>
           <p className="text-base text-muted-foreground text-center font-[500] pb-10">
             Um fluxo linear projetado para facilitar a maneira que você ensina
           </p>
         </div>
-        <div className="flex gap-4">
-          <VideoPresentation />
+        <div className="flex gap-4 justify-between items-center flex-col lg:flex-row">
+          <VideoPresentation 
+          videoUrl=""
+          />
           <div className="space-y-8">
             <Step
               number={1}

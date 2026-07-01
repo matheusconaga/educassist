@@ -53,23 +53,20 @@ const buttonVariants = cva(
           "hover:shadow-primary/10",
         ],
 
-        ghost: [
-          "text-foreground",
-          "cursor-default",
-          "hover:bg-muted",
-        ],
+        ghost: ["text-foreground", "cursor-default", "hover:bg-muted"],
 
-        glass: [
-          "bg-glass-primary",
-
-          "backdrop-blur-md",
+        secondary: [
+          "bg-white",
+          "text-primary",
+          "font-semibold",
 
           "border",
-          "border-border",
+          "border-white/80",
 
-          "text-foreground",
+          "hover:bg-white/90",
 
-          "hover:bg-glass-secondary",
+          "hover:shadow-lg",
+          "hover:shadow-primary/15",
         ],
       },
 
@@ -88,11 +85,12 @@ const buttonVariants = cva(
       variant: "primary",
       size: "md",
     },
-  }
+  },
 );
 
 interface ButtonProps
-  extends React.ButtonHTMLAttributes<HTMLButtonElement>,
+  extends
+    React.ButtonHTMLAttributes<HTMLButtonElement>,
     VariantProps<typeof buttonVariants> {
   leftIcon?: React.ReactNode;
   rightIcon?: React.ReactNode;
@@ -121,23 +119,15 @@ export function Button({
           size,
         }),
 
-        className
+        className,
       )}
       {...props}
     >
-      {leftIcon && (
-        <span className="flex items-center">
-          {leftIcon}
-        </span>
-      )}
+      {leftIcon && <span className="flex items-center">{leftIcon}</span>}
 
       {children}
 
-      {rightIcon && (
-        <span className="flex items-center">
-          {rightIcon}
-        </span>
-      )}
+      {rightIcon && <span className="flex items-center">{rightIcon}</span>}
     </button>
   );
 }

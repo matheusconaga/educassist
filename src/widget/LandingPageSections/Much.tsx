@@ -4,16 +4,16 @@ import { Download, File, GraduationCap, Layers, Mail, PlusCircle, Sparkle, Spark
 export default function Much() {
   return (
     <section className="relative overflow-hidden bg-background">
-      <div className="mx-auto mt-20 max-w-[1200px] px-4">
+      <div className="mx-auto max-w-[1200px] px-4">
         <div>
-          <h1 className=" mt-20 text-5xl font-extrabold leading-tight tracking-tight text-primary text-center">
+          <h1 className=" mt-10 text-5xl font-extrabold leading-tight tracking-tight text-primary text-center">
             Planos
           </h1>
           <p className="text-base text-muted-foreground text-center font-[500] pb-10">
             Com valores que cabem no seu bolso e de acordo com sua necessidade
           </p>
         </div>
-        <div className="mx-auto mt-4 grid max-w-[1200px] grid-cols-1 gap-2 px-4 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mx-auto mt-4 grid max-w-[1200px] grid-cols-1 gap-6 px-4 sm:grid-cols-2 lg:grid-cols-3">
           <PriceCard
             title="Plano"
             highlight="Gratuito"
@@ -46,7 +46,9 @@ export default function Much() {
           />
           <PriceCard
             title="Plano"
+            variant="featured"
             highlight="Essencial"
+            badge="Mais popular"
             subtitle="Para professores que utilizam a plataforma semanalmente."
             price="R$ 14,90"
             benefits={[
@@ -81,7 +83,7 @@ export default function Much() {
             title="Plano"
             highlight="Pro"
             subtitle="Para quem utiliza a plataforma praticamente todos os dias."
-            price="R$ 29,90"
+            price="R$ 39,90"
             benefits={[
               {
                 icon: <PlusCircle size={18} />,

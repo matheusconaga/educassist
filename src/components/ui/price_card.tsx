@@ -26,10 +26,15 @@ const priceCardVariants = cva(
         default: "",
 
         featured: [
+          "border-2",
           "border-primary",
-          "ring-2",
-          "ring-primary/15",
-          "scale-[1.03]",
+
+          "shadow-xl",
+          "shadow-primary/15",
+
+          "scale-[1.04]",
+
+          "hover:scale-[1.06]",
         ],
       },
     },
@@ -66,6 +71,8 @@ export interface PriceCardProps
   buttonText?: string;
 
   onSelect?: () => void;
+
+  badge?: string;
 }
 
 export function PriceCard({
@@ -91,10 +98,42 @@ export function PriceCard({
 
   onSelect,
 
+  badge,
+
   ...props
 }: PriceCardProps) {
   return (
-    <div className={cn(priceCardVariants({ variant }), className)} {...props}>
+    <div
+      className={cn("relative", priceCardVariants({ variant }), className)}
+      {...props}
+    >
+      {badge && (
+        <div
+          className="
+      absolute
+      left-1/2
+      top-0
+      -translate-x-1/2
+      -translate-y-1/2
+
+      rounded-full
+
+      bg-primary
+
+      px-5
+      py-2
+
+      text-sm
+      font-bold
+      text-white
+
+      shadow-lg
+      shadow-primary/30
+    "
+        >
+          {badge}
+        </div>
+      )}
       <div className="p-10">
         {/* Nome */}
 

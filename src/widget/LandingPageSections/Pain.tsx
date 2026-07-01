@@ -1,4 +1,4 @@
-import { TeacherPainCard } from "@/components/ui/teacher_pain_card";
+import { FeatureCard } from "@/components/ui/feature_card";
 import { BatteryLow, CalendarX2, UsersRound } from "lucide-react";
 
 export default function Pain() {
@@ -14,19 +14,19 @@ export default function Pain() {
           </p>
         </div>
         <div className="mx-auto mt-4 grid max-w-[1200px] grid-cols-1 gap-2 pb-4 px-4 sm:grid-cols-2 lg:grid-cols-3">
-          <TeacherPainCard
+          <FeatureCard
             icon={<CalendarX2 size={30}  />}
             title="O Domingo à noite sagrado"
             description="Horas perdidas preenchendo papeladas, alinhando conteúdos à BNCC e criando provas do zero."
           />
 
-          <TeacherPainCard
+          <FeatureCard
             icon={<BatteryLow size={30} />}
             title='A exaustão do "trabalho invisível"'
             description="Planejar e corrigir consome o tempo que você deveria usar para descansar ou dar atenção individual aos alunos."
           />
 
-          <TeacherPainCard
+          <FeatureCard
             icon={<UsersRound size={30} />}
             title="O desafio da personalização"
             description="Uma sala, 30 realidades diferentes. Como adaptar a mesma matéria para quem está avançado e para quem está com dificuldades?"

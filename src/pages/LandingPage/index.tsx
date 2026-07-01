@@ -4,6 +4,7 @@ import How from "@/widget/LandingPageSections/How";
 import Much from "@/widget/LandingPageSections/Much";
 import Pain from "@/widget/LandingPageSections/Pain";
 import Barrier from "@/widget/LandingPageSections/Barrier";
+import Pioneer from "@/widget/LandingPageSections/Pioneer";
 
 export default function LandingPage() {
   return (
@@ -13,6 +14,7 @@ export default function LandingPage() {
       <Why />
       <How />
       <Barrier />
+      <Pioneer/>
       <Much />
     </div>
   );
